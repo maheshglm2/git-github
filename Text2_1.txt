@@ -1,0 +1,72 @@
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project
+$ git init
+Initialized empty Git repository in E:/Projects/Edureka_Project/.git/
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git remote add origin "https://github.com/maheshglm2/git-github.git"
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git pull origin master
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/maheshglm2/git-github
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+
+ mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Text1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git add Text1.txt
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Text1.txt
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git commit -m "adding first commit in local repo"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'mahesh@MYPC.(none)')
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git config --global user.email "maheshglm1@gmail.com"
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git config --global user.name "maheshglm1"
+
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git commit -m "adding first commit in local repo"
+[master caa515d] adding first commit in local repo
+ 1 file changed, 20 insertions(+)
+ create mode 100644 Text1.txt
+
+ 
+ 
+ 

@@ -1,0 +1,20 @@
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project
+$ git init
+Initialized empty Git repository in E:/Projects/Edureka_Project/.git/
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git remote add origin "https://github.com/maheshglm2/git-github.git"
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git pull origin master
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/maheshglm2/git-github
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+
+ 
+ 

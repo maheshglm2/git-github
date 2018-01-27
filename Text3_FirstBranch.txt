@@ -1,0 +1,147 @@
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project
+$ git init
+Initialized empty Git repository in E:/Projects/Edureka_Project/.git/
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git remote add origin "https://github.com/maheshglm2/git-github.git"
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git pull origin master
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/maheshglm2/git-github
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+
+ mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Text1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git add Text1.txt
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Text1.txt
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git commit -m "adding first commit in local repo"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'mahesh@MYPC.(none)')
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git config --global user.email "maheshglm1@gmail.com"
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git config --global user.name "maheshglm1"
+
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git commit -m "adding first commit in local repo"
+[master caa515d] adding first commit in local repo
+ 1 file changed, 20 insertions(+)
+ create mode 100644 Text1.txt
+
+ 
+ mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Text1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Text2_1.txt
+        Text2_2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git add -A
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Text1.txt
+        new file:   Text2_1.txt
+        new file:   Text2_2.txt
+
+
+		
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git commit -a -m "adding 3 files together"
+[master 2f4b7a8] adding 3 files together
+ 3 files changed, 145 insertions(+), 1 deletion(-)
+ create mode 100644 Text2_1.txt
+ create mode 100644 Text2_2.txt
+		
+
+		mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git log
+commit 2f4b7a806db10c917247ec63d3f3db687911351b (HEAD -> master)
+Author: maheshglm1 <maheshglm1@gmail.com>
+Date:   Sat Jan 27 23:06:17 2018 +0800
+
+    adding 3 files together
+
+commit caa515d44e2ad3ca48ede8bfb69a73c0cd062a4a
+Author: maheshglm1 <maheshglm1@gmail.com>
+Date:   Sat Jan 27 23:02:16 2018 +0800
+
+    adding first commit in local repo
+
+commit 86cc1a1f5a63a17650a502d515b472b7726e41f0 (origin/master)
+Author: maheshglm2 <35866848+maheshglm2@users.noreply.github.com>
+Date:   Sat Jan 27 22:45:32 2018 +0800
+
+    Update README.md
+
+commit 07740317fbfe8b5361d860eccfef214c77e1ac47
+Author: maheshglm2 <35866848+maheshglm2@users.noreply.github.com>
+Date:   Sat Jan 27 22:44:39 2018 +0800
+
+    Initial commit
+
+	
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git branch firstbranch
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (master)
+$ git checkout firstbranch
+Switched to branch 'firstbranch'
+
+mahesh@MYPC MINGW64 /e/Projects/Edureka_Project (firstbranch)
+
+		
